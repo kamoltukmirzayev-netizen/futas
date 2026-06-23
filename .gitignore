@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Local exports produced at runtime (the template itself is tracked)
+/FUTAS_report*.xlsx
+/FUTAS_report*.txt
+
+# Local screenshots / scratch CSVs dropped in the project folder (not part of the app)
+*.jpg
+*.jpeg
+*.png
+/XAUUSD_H1_*.csv
+/_*.md
+/_*.py

@@ -1,0 +1,21 @@
+# FUTAS — Fibonacci Urvin Adaptive Trading Analysis System
+# Python 3.10+  (tested on Python 3.13)
+
+# --- core application dependencies ---
+pandas>=2.0
+numpy>=1.24
+streamlit>=1.58
+plotly>=5.18
+openpyxl>=3.1
+pillow>=10.0
+
+# --- optional: OCR text reading in Screenshot TA (axis / asset labels) ---
+# pytesseract calls the system Tesseract binary (installed via packages.txt on
+# Streamlit Cloud). The app degrades gracefully if these are absent, so you may
+# remove this line and tesseract-ocr from packages.txt for a leaner, faster build.
+pytesseract>=0.3.10
+
+# NOTE: MetaTrader5 is intentionally NOT listed — it is Windows-only and would
+# break the Linux cloud build. The Live MT5 Center auto-falls back to the cloud
+# feeds (Binance / Yahoo); MT5 activates only when you run FUTAS locally on
+# Windows with `pip install MetaTrader5`.
