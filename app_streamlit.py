@@ -233,7 +233,7 @@ def _current_tf_label() -> str:
     base = st.session_state.df_base
     return (st.session_state.tf_active
             or (fe.native_timeframe(base) if base is not None else None) or "—")
-
+#nkjnsdakjfnkdsafna
 
 def _tg_log(text: str, ok: bool, **fields):
     entry = {"time": datetime.now().strftime("%H:%M:%S"), "ok": bool(ok), "text": text}
